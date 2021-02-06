@@ -17,6 +17,7 @@ function _frontend() {
   frontend_points=( "${(f)mapfile[$CONFIG]//$HOME/~}" )
 
   commands=(
+<<<<<<< HEAD
     'angular: Search in Angular.io website'
     'angularjs: Search in docs.angularjs.org website'
     'bem: Search in BEM website'
@@ -46,6 +47,28 @@ function _frontend() {
     'typescript: Search in TypeScript website'
     'unheap: Search in unheap website'
     'vuejs: Search in VueJS website'
+=======
+    'jquery: Search in jQuery website'
+    'mdn: Search in MDN website'
+    'compass: Search in COMPASS website'
+    'html5please: Search in HTML5 Please website'
+    'caniuse: Search in Can I Use website'
+    'aurajs: Search in AuraJs website'
+    'dartlang: Search in Dart website'
+    'lodash: Search in Lo-Dash website'
+    'qunit: Search in Qunit website'
+    'fontello: Search in fontello website'
+    'bootsnipp: Search in bootsnipp website'
+    'cssflow: Search in cssflow website'
+    'codepen: Search in codepen website'
+    'unheap: Search in unheap website'
+    'bem: Search in BEM website'
+    'smacss: Search in SMACSS website'
+    'angularjs: Search in Angular website'
+    'reactjs: Search in React website'
+    'emberjs: Search in Ember website'
+    'stackoverflow: Search in StackOverflow website'
+>>>>>>> f1782dc6 (Add autocomplete for frontend-search)
   )
 
   _arguments -C \
@@ -65,7 +88,11 @@ function _frontend() {
         mdn)
           _describe -t points "Warp points" frontend_points && ret=0
           ;;
+<<<<<<< HEAD
         compassdoc)
+=======
+        compass)
+>>>>>>> f1782dc6 (Add autocomplete for frontend-search)
           _describe -t points "Warp points" frontend_points && ret=0
           ;;
         html5please)
@@ -74,6 +101,12 @@ function _frontend() {
         caniuse)
           _describe -t points "Warp points" frontend_points && ret=0
           ;;
+<<<<<<< HEAD
+=======
+        aurajs)
+          _describe -t points "Warp points" frontend_points && ret=0
+          ;;
+>>>>>>> f1782dc6 (Add autocomplete for frontend-search)
         dartlang)
           _describe -t points "Warp points" frontend_points && ret=0
           ;;
@@ -86,9 +119,12 @@ function _frontend() {
         fontello)
           _describe -t points "Warp points" frontend_points && ret=0
           ;;
+<<<<<<< HEAD
         github)
           _describe -t points "Warp points" frontend_points && ret=0
           ;;
+=======
+>>>>>>> f1782dc6 (Add autocomplete for frontend-search)
         bootsnipp)
           _describe -t points "Warp points" frontend_points && ret=0
           ;;
@@ -119,6 +155,7 @@ function _frontend() {
         stackoverflow)
           _describe -t points "Warp points" frontend_points && ret=0
           ;;
+<<<<<<< HEAD
         npmjs)
           _describe -t points "Warp points" frontend_points && ret=0
           ;;
@@ -143,6 +180,8 @@ function _frontend() {
         jestjs)
           _describe -t points "Warp points" frontend_points && ret=0
           ;;
+=======
+>>>>>>> f1782dc6 (Add autocomplete for frontend-search)
       esac
       ;;
   esac
